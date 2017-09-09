@@ -19,7 +19,7 @@ def load_salt(location):
 
 def get_password():
     password = dmenu.show([], foreground='#feca1e', background='#feca1e')
-    if password is None or password == '':
+    if not password:
         sys.exit()    
     return password
  
